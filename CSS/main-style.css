@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{scroll-behavior: smooth}
+body{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0;
+}
+p{ color: #666;line-height: 1.5em; }
+
+section { min-height: 100vh}
+#hero
+{
+	/*background: rgb(96,14,49);
+background: linear-gradient(21deg, rgba(96,14,49,1) 0%, rgba(121,9,105,1) 35%);*/
+	color:#962A56;
+	background-image: url("../images/kkk.jpg");	
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 700px 600px
+}
+.bg-primary{	background-color:#750A61}
+.text-primary{ color:#750A61}
+.text-white{ color: #FFFFFF}
+.icon-ss a 
+{
+	color: white;
+	text-decoration: none;
+	background: #E1208D;
+	margin:10px;	
+	padding: 0;
+	border-radius:50%;
+	text-align: center;
+	width: 40px; 
+	height: 40px;
+	line-height: 40px;
+	display: inline-block
+}
+.icon-ss a:hover { background: #E77192} 
+header
+{ 
+	
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	position: fixed;
+	width: 100%;
+	z-index: 999999
+
+}
+#me1
+{transition: all 1s}
+
+#me1:hover
+{transition: translate(-50px, 50px) scale(1.3) rotate(15deg);
+filter: contrast(25%) brightness(15%)
+}
+.hvr-underline
+{}
+.hvr-underline:before
+{
+	content: "aaa";
+	width: 100%; height: 100%; background:rgba(163,255,202,1.00);
+	position: absolute;
+	left:0;
+	bottom: 0;
+	z-index: -1;
+	transition: all 0.5s;
+	transform: scale( 0 50px);
+	transform-origin: right top
+}
